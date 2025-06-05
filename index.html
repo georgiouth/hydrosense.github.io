@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HydroSense – Next generation Hydrogen Sensor</title>
+  <!-- Tailwind via CDN for rapid development -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-sky-50 to-white text-slate-800 font-sans antialiased">
+  <!-- Hero / masthead -->
+  <header class="py-24 text-centre max-w-3xl mx-auto px-4">
+    <!-- NEW LOGO -->
+    <img src="hydrosense-logo.jpg" alt="HydroSense logo" class="w-48 mx-auto mb-6 drop-shadow-lg" />
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+      Organic hydrogen sensing — safer, faster, greener
+    </h1>
+    <p class="text-lg md:text-xl mb-8">
+      Real‑time detection below 0.2&nbsp;ppm, <span class="whitespace-nowrap">&lt; 1 s</span> response and ultra‑low power
+    </p>
+    <a href="#contact" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-3 px-6 rounded-full transition">
+      Enquire now
+    </a>
+  </header>
+
+  <!-- Benefits section -->
+  <section id="benefits" class="py-16 bg-white/60 backdrop-blur-sm">
+    <div class="max-w-5xl mx-auto grid gap-8 md:grid-cols-3 px-6">
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Ultra‑low power</h3>
+        <p>Operates at ≤ 2 µW — ideal for battery‑free wireless nodes.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Parts‑per‑billion sensitivity</h3>
+        <p>Detects hydrogen at ~192 ppb, outperforming conventionally doped sensors.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Long‑term stability</h3>
+        <p>&gt; 646‑day lifetime demonstrated without recalibration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works section -->
+  <section id="how" class="py-16 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-6 text-centre">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">How it works</h2>
+      <p class="mb-4">A Pt electrode catalytically splits H<sub>2</sub>; the resulting protons de‑dope the organic semiconductor, producing an immediate drop in conductivity that we measure with ≤ 0.8 V bias.</p>
+      <p>The reversible p‑doping / de‑doping cycle allows thousands of repeat tests without drift.</p>
+    </div>
+  </section>
+
+  <!-- Applications section -->
+  <section id="applications" class="py-16">
+    <div class="max-w-5xl mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div class="text-centre">
+        <h3 class="font-semibold text-xl mb-2">Electrolyser safety</h3>
+        <p>Instant leak detection protects equipment and staff.</p>
+      </div>
+      <div class="text-centre">
+        <h3 class="font-semibold text-xl mb-2">Hydrogen drones</h3>
+        <p>Lightweight sensors keep UAVs within payload limits.</p>
+      </div>
+      <div class="text-centre">
+        <h3 class="font-semibold text-xl mb-2">Smart homes</h3>
+        <p>Continuous monitoring for domestic fuel‑cell boilers.</p>
+      </div>
+      <div class="text-centre">
+        <h3 class="font-semibold text-xl mb-2">Pipeline monitoring</h3>
+        <p>Distributed sensor networks along hydrogen corridors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / call‑to‑action -->
+  <section id="contact" class="py-20 bg-sky-600 text-white text-centre">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Let’s talk hydrogen safety</h2>
+    <p class="mb-8 max-w-2xl mx-auto">Whether you’re designing fuel‑cell systems or retrofitting infrastructure, we can help integrate HydroSense into your product.</p>
+    <a href="mailto:info@hydrosense.uk" class="inline-block bg-white text-sky-700 hover:text-sky-800 font-semibold py-3 px-8 rounded-full transition">
+      Email us
+    </a>
+  </section>
+
+  <footer class="py-8 text-centre text-sm text-slate-500">
+    © <span id="year"></span> HydroSense • <a href="/HydroSense_publication.pdf" class="underline hover:text-sky-700">Nature Electronics paper</a> • <a href="https://github.com/hydrosense/hydrosense.github.io" class="underline hover:text-sky-700">GitHub source</a>
+  </footer>
+
+  <script>
+    // Auto‑update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
