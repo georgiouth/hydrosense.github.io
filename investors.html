@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HydroSense – Investors</title>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body class="bg-gradient-to-b from-sky-50 to-white text-slate-800 font-sans antialiased">
+
+  <!-- ────────────── Masthead ────────────── -->
+  <header class="py-24 text-center max-w-3xl mx-auto px-4">
+    <!-- Logo (identical format to index.html) -->
+    <img src="hydrosense-logo.png"
+         alt="HydroSense logo"
+         class="w-80 mx-auto mb-6 drop-shadow-lg" />
+
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+      Invest in HydroSense
+    </h1>
+
+    <p class="text-lg md:text-xl max-w-2xl mx-auto">
+      Ultra-low-power hydrogen sensing for the trillion-dollar energy transition.
+    </p>
+  </header>
+
+  <!-- ────────────── Investor proposition ────────────── -->
+  <section class="py-20 bg-white/70 backdrop-blur-sm">
+    <div class="max-w-4xl mx-auto px-6 text-left">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Why now</h2>
+
+      <p class="mb-6">
+        <strong>HydroSense is unlocking real-time hydrogen safety</strong> for a market forecast to exceed
+        <span class="whitespace-nowrap">$1&nbsp;trillion&nbsp;by&nbsp;2050</span>. We will soon be launching our seed round to scale
+        pilot production and secure first wins with partners.
+      </p>
+
+      <ul class="space-y-4 list-disc list-inside">
+        <li><strong>Proprietary IP</strong> – PCT patent pending; validated in <em>Nature Electronics</em> and shortlisted in the Royal Society of Chemistry’s 2025 Emerging Technologies Competition.</li>
+        <li><strong>Differentiated performance</strong> – ms response, µW power, ppb sensitivity — all beyond catalytic bead, MOS or fibre-optic sensors.</li>
+        <li><strong>Capital-light manufacturing</strong> – scalable printed-electronics processes on commodity substrates.</li>
+        <li><strong>Early traction</strong> – offering validated commercialisation pathway.</li>
+      </ul>
+
+      <p class="mt-8">
+        If you share our vision for a hydrogen-powered economy and want a compelling growth opportunity, we’d welcome a confidential conversation.
+      </p>
+
+      <!-- CTA -->
+      <div class="mt-10">
+        <a href="mailto:thomas.anthopoulos@manchester.ac.uk,thanasis.georgiou@manchester.ac.uk?subject=Investor%20deck%20request"
+           class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-3 px-8 rounded-full transition">
+          Request investor deck
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────── Footer ────────────── -->
+  <footer class="py-8 text-center text-sm text-slate-500">
+    © <span id="year"></span> HydroSense •
+    <a href="index.html" class="underline hover:text-sky-700">Home</a> •
+    <a href="https://www.nature.com/articles/s41928-025-01352-y"
+       class="underline hover:text-sky-700" target="_blank" rel="noopener noreferrer">
+      Nature Electronics paper
+    </a> • PCT patent pending
+• <a href="investors.html" class="underline hover:text-sky-700">Investors</a>
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
