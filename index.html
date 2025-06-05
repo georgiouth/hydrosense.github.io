@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HydroSense – Next generation Hydrogen Sensor</title>
+  <title>HydroSense – Next-generation Hydrogen Sensor</title>
   <!-- Tailwind via CDN for rapid development -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -11,101 +11,186 @@
   </style>
 </head>
 <body class="bg-gradient-to-b from-sky-50 to-white text-slate-800 font-sans antialiased">
+
   <!-- Hero / masthead -->
-  <header class="py-24 text-centre max-w-3xl mx-auto px-4">
-    <!-- NEW LOGO -->
+  <header class="py-24 text-center max-w-3xl mx-auto px-4">
     <img src="hydrosense-logo.jpg" alt="HydroSense logo" class="w-48 mx-auto mb-6 drop-shadow-lg" />
+
     <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
-      Hydrogen sensing — safer & faster
+      Hydrogen sensing — safer &amp; faster
     </h1>
+
     <p class="text-lg md:text-xl mb-8">
-      Real‑time detection below 0.2&nbsp;ppm, <span class="whitespace-nowrap">&lt; 1 s</span> response and ultra‑low power
+      Real-time detection below 0.2&nbsp;ppm, <span class="whitespace-nowrap">&lt; 1 s</span> response and ultra-low power
     </p>
+
     <a href="#contact" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-3 px-6 rounded-full transition">
       Enquire now
     </a>
   </header>
 
-<!-- Benefits section -->
-<section id="benefits" class="py-16 bg-white/60 backdrop-blur-sm">
-  <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-5 px-6">
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold text-xl mb-2">Ultra‑fast response</h3>
-      <p>Detects hydrogen within milliseconds — ideal for critical safety applications.</p>
-    </div>
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold text-xl mb-2">Ultra‑low power</h3>
-      <p>Operates at ≤ 2 µW — ideal for battery‑free wireless nodes.</p>
-    </div>
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold text-xl mb-2">Parts‑per‑billion sensitivity</h3>
-      <p>From ppb to 100% H2 sensitivity, outperforming conventional sensors.</p>
-    </div>
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold text-xl mb-2">Long‑term stability</h3>
-      <p>Multi-year lifetime demonstrated without recalibration.</p>
-    </div>
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold text-xl mb-2">Exceptional selectivity</h3>
-      <p>Virtually no cross‑sensitivity to other gases &mdash; >10 000 × stronger response to H₂ than to common organic vapours and permanent gases.</p>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- How it works section -->
-  <section id="how" class="py-16 bg-slate-50">
-    <div class="max-w-4xl mx-auto px-6 text-centre">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">How it works</h2>
-      <p class="mb-4">A Pt electrode catalytically splits H<sub>2</sub>; the resulting protons de‑dope the organic semiconductor, producing an immediate drop in conductivity that we measure with ≤ 0.8 V bias.</p>
-      <p>The reversible p‑doping / de‑doping cycle allows thousands of repeat tests without drift.</p>
+  <!-- Sensor advantages -->
+  <section id="benefits" class="py-16 bg-white/60 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 px-6">
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Ultra-fast response</h3>
+        <p>Detects hydrogen within milliseconds — ideal for critical safety applications.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Ultra-low power</h3>
+        <p>Operates at ≤ 2 µW — perfect for battery-free wireless nodes.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Parts-per-billion sensitivity</h3>
+        <p>Accurate from 192 ppb up to 100 % H₂, far surpassing conventional sensors.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Long-term stability</h3>
+        <p>&gt; 646-day lifetime demonstrated without recalibration.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Exceptional selectivity</h3>
+        <p>Virtually no cross-sensitivity — &gt; 10 000 × stronger response to H₂ than to common VOCs and permanent gases.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Applications section -->
+  <!-- Technical specification -->
+  <section id="specs" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">
+        Technical specifications
+      </h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm md:text-base border-collapse">
+          <tbody>
+            <tr class="border-b">
+              <th class="text-left font-semibold py-2 pr-4">Detection range</th>
+              <td class="py-2">192 ppb – 100 % H<sub>2</sub></td>
+            </tr>
+            <tr class="border-b bg-slate-50">
+              <th class="text-left font-semibold py-2 pr-4">Response time (T<sub>90</sub>)</th>
+              <td class="py-2">&lt; 1 s (millisecond onset)</td>
+            </tr>
+            <tr class="border-b">
+              <th class="text-left font-semibold py-2 pr-4">Power consumption</th>
+              <td class="py-2">≤ 2 µW @ 0.8 V bias</td>
+            </tr>
+            <tr class="border-b bg-slate-50">
+              <th class="text-left font-semibold py-2 pr-4">Selectivity ratio</th>
+              <td class="py-2">&gt; 10 000 × H<sub>2</sub>/VOC</td>
+            </tr>
+            
+            <tr>
+              <th class="text-left font-semibold py-2 pr-4">Lifetime</th>
+              <td class="py-2">&gt; 646 days drift-free</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer benefits -->
+  <section id="customer-benefits" class="py-16 bg-white/70">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10">Customer benefits</h2>
+
+      <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="font-semibold text-xl mb-2">Battery-free deployments</h3>
+          <p>
+            HydroSense draws micro-watts, enabling energy-harvesting sensor
+            networks where conventional heated sensors would drain batteries in weeks.
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="font-semibold text-xl mb-2">True trace-to-bulk coverage</h3>
+          <p>
+            One sensor handles eight orders of magnitude in concentration —
+            no need to mix separate ppm and %H₂ detectors.
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="font-semibold text-xl mb-2">Intrinsically safe in Zone 0</h3>
+          <p>
+            No heater or spark risk, making HydroSense suitable for ATEX Zone 0
+            environments where catalytic or MOS sensors are prohibited.
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="font-semibold text-xl mb-2">Install-and-forget reliability</h3>
+          <p>
+            Multi-year drift-free operation slashes recalibration visits and
+            downtime, lowering total cost of ownership.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Possible applications -->
   <section id="applications" class="py-16">
-    <div class="max-w-5xl mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-      <div class="text-centre">
-        <h3 class="font-semibold text-xl mb-2">Electrolyser safety</h3>
-        <p>Instant leak detection protects equipment and staff.</p>
-      </div>
-      <div class="text-centre">
-        <h3 class="font-semibold text-xl mb-2">Hydrogen drones</h3>
-        <p>Lightweight sensors keep UAVs within payload limits.</p>
-      </div>
-      <div class="text-centre">
-        <h3 class="font-semibold text-xl mb-2">Smart homes</h3>
-        <p>Continuous monitoring for domestic fuel‑cell boilers.</p>
-      </div>
-      <div class="text-centre">
-        <h3 class="font-semibold text-xl mb-2">Pipeline monitoring</h3>
-        <p>Distributed sensor networks along hydrogen corridors.</p>
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Possible applications</h2>
+
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
+        <div>
+          <h3 class="font-semibold text-xl mb-2">Electrolyser safety</h3>
+          <p>Instant leak detection protects equipment and staff.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">Hydrogen drones</h3>
+          <p>Lightweight sensors keep UAVs within payload limits.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">Smart homes</h3>
+          <p>Continuous monitoring for domestic fuel-cell boilers.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">Pipeline monitoring</h3>
+          <p>Distributed sensor networks along hydrogen corridors.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / call‑to‑action -->
-  <section id="contact" class="py-20 bg-sky-600 text-white text-centre">
+  <!-- How it works -->
+  <section id="how" class="py-16 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">How it works</h2>
+      <p class="mb-4">
+        A Pt electrode catalytically splits H<sub>2</sub>; the resulting protons de-dope the organic semiconductor,
+        producing an immediate drop in conductivity that we measure with ≤ 0.8 V bias.
+      </p>
+      <p>The reversible p-doping / de-doping cycle allows thousands of repeat tests without drift.</p>
+    </div>
+  </section>
+
+  <!-- Contact / call-to-action -->
+  <section id="contact" class="py-20 bg-sky-600 text-white text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-6">Let’s talk hydrogen safety</h2>
-    <p class="mb-8 max-w-2xl mx-auto">Whether you’re designing fuel‑cell systems or retrofitting infrastructure, we can help integrate HydroSense into your product.</p>
-<a href="mailto:thomas.anthopoulos@manchester.ac.uk,thanasis.georgiou@manchester.ac.uk?subject=Contact%20from%20website%20regarding%20hydrogen%20sensor" class="inline-block bg-white text-sky-700 hover:text-sky-800 font-semibold py-3 px-8 rounded-full transition">
-  Contact Us
-</a>
-      Email us
+    <p class="mb-8 max-w-2xl mx-auto">
+      Whether you’re designing fuel-cell systems or retrofitting infrastructure, we can help integrate HydroSense into your product.
+    </p>
+
+    <a href="mailto:thomas.anthopoulos@manchester.ac.uk,thanasis.georgiou@manchester.ac.uk?subject=Contact%20from%20website%20regarding%20hydrogen%20sensor"
+       class="inline-block bg-white text-sky-700 hover:text-sky-800 font-semibold py-3 px-8 rounded-full transition">
+      Contact us
     </a>
   </section>
 
- <footer class="py-8 text-centre text-sm text-slate-500">
-  © <span id="year"></span> HydroSense • 
-  <a href="https://www.nature.com/articles/s41928-025-01352-y" class="underline hover:text-sky-700" target="_blank" rel="noopener noreferrer">
-    Nature Electronics paper
-  </a> • PCT patent pending
-</footer>
-
+  <!-- Footer -->
+  <footer class="py-8 text-center text-sm text-slate-500">
+    © <span id="year"></span> HydroSense •
+    <a href="https://www.nature.com/articles/s41928-025-01352-y" class="underline hover:text-sky-700" target="_blank" rel="noopener noreferrer">
+      Nature Electronics paper
+    </a> • PCT patent pending
+  </footer>
 
   <script>
-    // Auto‑update year in footer
+    // Auto-update the year in the footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
